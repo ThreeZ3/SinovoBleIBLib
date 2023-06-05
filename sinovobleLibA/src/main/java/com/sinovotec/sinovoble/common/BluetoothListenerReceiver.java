@@ -1,4 +1,4 @@
-package com.sinovotec.sinovoiblib.common;
+package com.sinovotec.sinovoble.common;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
@@ -9,9 +9,10 @@ import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 
-
-import com.sinovotec.sinovoiblib.SinovoBle;
-import com.sinovotec.sinovoiblib.callback.BleConnCallBack;
+//import com.sinovotec.mqtt.MqttLib;
+import com.sinovotec.sinovoble.SinovoBle;
+import com.sinovotec.sinovoble.callback.BleConnCallBack;
+//import com.sinovotec.sinovobleib.callback.BleScanCallBack;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.sinovotec.sinovoiblib.encryptlib;
+package com.sinovotec.encryptlib;
 
 public class LoadLibJni {
 

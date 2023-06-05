@@ -1,4 +1,4 @@
-package com.sinovotec.sinovoiblib.callback;
+package com.sinovotec.sinovoble.callback;
 
 /**
  * @Description: 连接设备回调

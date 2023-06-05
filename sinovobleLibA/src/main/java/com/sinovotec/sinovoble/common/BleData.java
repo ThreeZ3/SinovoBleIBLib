@@ -1,19 +1,15 @@
-package com.sinovotec.sinovoiblib.common;
-
-
-import static com.sinovotec.sinovoiblib.common.ComTool.toByte;
+package com.sinovotec.sinovoble.common;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-
-
-import com.sinovotec.sinovoiblib.SinovoBle;
-import com.sinovotec.sinovoiblib.callback.BleConnCallBack;
-
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.UUID;
+
+import com.sinovotec.sinovoble.SinovoBle;
+import com.sinovotec.sinovoble.callback.BleConnCallBack;
+import static com.sinovotec.sinovoble.common.ComTool.toByte;
 
 public class BleData {
 

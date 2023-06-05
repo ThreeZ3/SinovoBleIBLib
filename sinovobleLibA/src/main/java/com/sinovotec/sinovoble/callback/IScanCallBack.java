@@ -1,4 +1,4 @@
-package com.sinovotec.sinovoiblib.callback;
+package com.sinovotec.sinovoble.callback;
 
 public interface IScanCallBack {
     //发现设备

@@ -1,4 +1,4 @@
-package com.sinovotec.sinovoiblib.common;
+package com.sinovotec.sinovoble.common;
 
 public class BleConnectLock {
     private String lockMac;        //蓝牙锁的mac地址

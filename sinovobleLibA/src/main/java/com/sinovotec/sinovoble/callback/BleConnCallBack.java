@@ -1,7 +1,4 @@
-package com.sinovotec.sinovoiblib.callback;
-
-
-import static com.sinovotec.sinovoiblib.common.ComTool.byte2hex;
+package com.sinovotec.sinovoble.callback;
 
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
@@ -16,19 +13,22 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.sinovotec.sinovoiblib.SinovoBle;
-import com.sinovotec.sinovoiblib.common.BleConnectLock;
-import com.sinovotec.sinovoiblib.common.BleConstant;
-import com.sinovotec.sinovoiblib.common.BleData;
-import com.sinovotec.sinovoiblib.common.ComTool;
-
-
+import com.sinovotec.sinovoble.SinovoBle;
+import com.sinovotec.sinovoble.common.BleData;
+import com.sinovotec.sinovoble.common.BleConnectLock;
+import com.sinovotec.sinovoble.common.BleConstant;
+import com.sinovotec.sinovoble.common.ComTool;
 
 import java.lang.reflect.Method;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
+
+//import blufi.espressif.params.BlufiConfigureParams;
+//import blufi.espressif.params.BlufiParameter;
+
+import static com.sinovotec.sinovoble.common.ComTool.byte2hex;
 
 public class BleConnCallBack extends BluetoothGattCallback {
     private static BleConnCallBack instance;                //入口操作管理

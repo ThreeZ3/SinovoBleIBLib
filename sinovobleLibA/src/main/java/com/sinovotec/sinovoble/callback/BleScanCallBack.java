@@ -1,23 +1,24 @@
-package com.sinovotec.sinovoiblib.callback;
-
-
-import static com.sinovotec.sinovoiblib.common.ComTool.byte2hex;
-import static com.sinovotec.sinovoiblib.common.ComTool.calTimeDiff;
-import static com.sinovotec.sinovoiblib.common.ComTool.getNowTime;
+package com.sinovotec.sinovoble.callback;
 
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.le.ScanCallback;
 import android.bluetooth.le.ScanRecord;
 import android.bluetooth.le.ScanResult;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.util.SparseArray;
 
 import com.alibaba.fastjson.JSONObject;
-import com.sinovotec.sinovoiblib.SinovoBle;
-import com.sinovotec.sinovoiblib.common.BleConnectLock;
-import com.sinovotec.sinovoiblib.common.BleScanDevice;
+import com.sinovotec.sinovoble.SinovoBle;
+import com.sinovotec.sinovoble.common.BleConnectLock;
+import com.sinovotec.sinovoble.common.BleScanDevice;
 
 import java.util.LinkedHashMap;
+
+import static com.sinovotec.sinovoble.common.ComTool.byte2hex;
+import static com.sinovotec.sinovoble.common.ComTool.calTimeDiff;
+import static com.sinovotec.sinovoble.common.ComTool.getNowTime;
 
 public class BleScanCallBack extends ScanCallback {
     private static BleScanCallBack instance;                //入口操作管理

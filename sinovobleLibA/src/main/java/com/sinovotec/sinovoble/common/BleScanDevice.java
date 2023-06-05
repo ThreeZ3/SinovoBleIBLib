@@ -1,4 +1,4 @@
-package com.sinovotec.sinovoiblib.common;
+package com.sinovotec.sinovoble.common;
 
 import android.bluetooth.BluetoothDevice;
 

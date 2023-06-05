@@ -1,4 +1,4 @@
-package com.sinovotec.sinovoiblib.common;
+package com.sinovotec.sinovoble.common;
 
 import android.app.Activity;
 import android.os.Bundle;

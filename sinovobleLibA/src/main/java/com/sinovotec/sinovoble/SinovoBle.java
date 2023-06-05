@@ -1,10 +1,11 @@
-package com.sinovotec.sinovoiblib;
-
-import static android.content.Context.WIFI_SERVICE;
+package com.sinovotec.sinovoble;
 
 import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+//import android.bluetooth.BluetoothGatt;
+//import android.bluetooth.BluetoothGattCharacteristic;
+//import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.le.ScanFilter;
 import android.bluetooth.le.ScanSettings;
@@ -20,27 +21,36 @@ import android.os.Looper;
 import android.os.ParcelUuid;
 import android.util.Log;
 
-
 import com.alibaba.fastjson.JSONObject;
-import com.sinovotec.sinovoiblib.callback.BleConnCallBack;
-import com.sinovotec.sinovoiblib.callback.BleScanCallBack;
-import com.sinovotec.sinovoiblib.callback.IConnectCallback;
-import com.sinovotec.sinovoiblib.callback.IScanCallBack;
-import com.sinovotec.sinovoiblib.common.BleConnectLock;
-import com.sinovotec.sinovoiblib.common.BleConstant;
-import com.sinovotec.sinovoiblib.common.BleData;
-import com.sinovotec.sinovoiblib.common.BleScanDevice;
-import com.sinovotec.sinovoiblib.common.BluetoothListenerReceiver;
-import com.sinovotec.sinovoiblib.common.ComTool;
-import com.sinovotec.sinovoiblib.encryptlib.LoadLibJni;
-
+//import com.sinovotec.gwSmartConfig.GWSmartConfigCallback;
+import com.sinovotec.sinovoble.callback.BleConnCallBack;
+import com.sinovotec.sinovoble.callback.BleScanCallBack;
+import com.sinovotec.sinovoble.callback.IConnectCallback;
+import com.sinovotec.sinovoble.callback.IScanCallBack;
+import com.sinovotec.sinovoble.common.BleData;
+import com.sinovotec.sinovoble.common.BleConnectLock;
+import com.sinovotec.sinovoble.common.BleConstant;
+import com.sinovotec.sinovoble.common.BleScanDevice;
+import com.sinovotec.sinovoble.common.BluetoothListenerReceiver;
+import com.sinovotec.sinovoble.common.ComTool;
+import com.sinovotec.encryptlib.LoadLibJni;
+//import com.sinovotec.sinovobleib.common.DfuUtils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+//import java.util.Locale;
 import java.util.Objects;
+
+//import androidx.annotation.NonNull;
+//import blufi.espressif.BlufiCallback;
+//import blufi.espressif.BlufiClient;
+//import blufi.espressif.response.BlufiStatusResponse;
+//import no.nordicsemi.android.dfu.DfuProgressListener;
+
+import static android.content.Context.WIFI_SERVICE;
 
 public class SinovoBle {
     private final String TAG    = "SinovoBle";
@@ -755,7 +765,7 @@ public class SinovoBle {
             return ;
         }
 
-        String data = lockSNO + ComTool.stringToAscii(userName);
+        String data = lockSNO +ComTool.stringToAscii(userName);
         BleData.getInstance().exeCommand("02", data, false);
     }
 
