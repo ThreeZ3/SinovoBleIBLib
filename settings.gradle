@@ -8,4 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "SinovoBleIBLib"
 include ':app'
-include ':sinovoibLib'
+include ':sinovobleLibA'
