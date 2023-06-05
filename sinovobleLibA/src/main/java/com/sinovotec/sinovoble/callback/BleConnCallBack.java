@@ -25,9 +25,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
-//import blufi.espressif.params.BlufiConfigureParams;
-//import blufi.espressif.params.BlufiParameter;
-
 import static com.sinovotec.sinovoble.common.ComTool.byte2hex;
 
 public class BleConnCallBack extends BluetoothGattCallback {

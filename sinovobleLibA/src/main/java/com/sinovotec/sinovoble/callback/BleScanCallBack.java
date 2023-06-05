@@ -4,8 +4,6 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.le.ScanCallback;
 import android.bluetooth.le.ScanRecord;
 import android.bluetooth.le.ScanResult;
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.util.SparseArray;
 

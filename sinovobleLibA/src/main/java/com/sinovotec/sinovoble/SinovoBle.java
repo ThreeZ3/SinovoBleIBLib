@@ -3,9 +3,6 @@ package com.sinovotec.sinovoble;
 import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
-//import android.bluetooth.BluetoothGatt;
-//import android.bluetooth.BluetoothGattCharacteristic;
-//import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.le.ScanFilter;
 import android.bluetooth.le.ScanSettings;
@@ -22,7 +19,6 @@ import android.os.ParcelUuid;
 import android.util.Log;
 
 import com.alibaba.fastjson.JSONObject;
-//import com.sinovotec.gwSmartConfig.GWSmartConfigCallback;
 import com.sinovotec.sinovoble.callback.BleConnCallBack;
 import com.sinovotec.sinovoble.callback.BleScanCallBack;
 import com.sinovotec.sinovoble.callback.IConnectCallback;
